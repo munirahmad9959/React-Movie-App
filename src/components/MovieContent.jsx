@@ -8,7 +8,7 @@ import { IoMdAdd } from "react-icons/io";
 
 const MovieContent = ({ movie }) => {
     return (
-        <div className="content">
+        <div className={`content ${movie.active ? 'active' : ''}`}>
             <img src={movie.titleImg} alt="Movie Title" className='movie-title' />
             <h4>
                 <span>{movie.year}</span>

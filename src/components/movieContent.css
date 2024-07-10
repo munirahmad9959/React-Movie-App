@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
+  border: 1px solid white;
 }
 
 .banner .content.active {
