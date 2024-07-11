@@ -5,6 +5,8 @@
     transform: scale(0);
     transition: 1s;
     z-index: 1000;
+    width: 600px;
+    margin-left: 270px;
   }
   
   .banner .date.active {

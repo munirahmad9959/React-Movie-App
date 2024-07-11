@@ -47,4 +47,23 @@
   opacity: 1;
 }
 
+.container-grid {
+  position: absolute;
+  display: grid;
+  /* border: 1px solid white; */
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 3rem);
+  width: 100%;
+  gap: 2rem;
+  z-index: 1000;
+  align-items: center;
+}
+.grid1,
+.grid2 {
+  /* border: 1px solid white; */
+  width: 90%;
+  height: 80%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
 

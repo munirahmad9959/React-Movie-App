@@ -18,12 +18,12 @@
   background-position: center;
   background-size: cover;
   width: 150px;
-  height: 80px;
+  height: 200px;
   border-radius: 10px;
 }
 
 .swiper-slide img {
     display: block;
-    width: 65%;
+    width: 100%;
     height: auto;
 }
