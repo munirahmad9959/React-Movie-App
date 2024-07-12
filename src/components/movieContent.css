@@ -1,5 +1,8 @@
 .content {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
   max-width: 550px;
   visibility: hidden;
   opacity: 0;
@@ -9,9 +12,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 550px; */
-  margin-left: 20px;
+  margin-left: 20px; 
+  margin-bottom: 20px; 
 }
+
 
 .content.active {
   visibility: visible;

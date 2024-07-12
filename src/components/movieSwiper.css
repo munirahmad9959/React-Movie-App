@@ -1,6 +1,7 @@
 .swiper {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  padding: 25px 0;
 }
 
 .movieSwiper {

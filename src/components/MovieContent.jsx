@@ -1,6 +1,5 @@
 import React from 'react'
 import "./movieContent.css"
-import titleImg from "../images/transformer-title.png"
 import Button from './Button'
 import { CiBookmark } from "react-icons/ci";
 import { IoMdAdd } from "react-icons/io";

@@ -42,7 +42,8 @@ const Banner = () => {
                         alt="Background Image"
                         className={`bgImg ${movie.active ? 'active' : ''}`}
                     />
-                    <div className="container-fluid d-flex justify-content-center">
+
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-lg-6 col-md-12">
                                 <MovieContent movie={movie} />
