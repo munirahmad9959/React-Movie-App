@@ -1,5 +1,7 @@
 section .movie-card {
   border: none;
+  width: 110%;
+  height: auto;
   position: relative;
   border-radius: 0;
   background: #000 !important;

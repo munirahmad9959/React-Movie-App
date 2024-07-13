@@ -23,8 +23,8 @@
 }
 
 .back-to-top:hover{
-    background: #000;
-    color: var(--primary);
+    background: var(--primary);
+    color: #fff
 }
 
 .back-to-top.active{
