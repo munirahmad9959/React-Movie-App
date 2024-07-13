@@ -1,5 +1,5 @@
 import React from 'react'
-import './model.css'
+import './Model.css'
 import { IoClose } from "react-icons/io5";
 
 function Model({ movie, toggleModel, status }) {
