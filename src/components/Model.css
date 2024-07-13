@@ -1,0 +1,37 @@
+.movieModel{
+    position: absolute;
+    content: '';
+    top: 75px;
+    left: 100px;
+    right: 100px;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    z-index: 1500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.movieModel iframe{
+    max-width: 882px;
+    max-height: 505px;
+}
+
+.movieModel .modelClose{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.movieModel.active{
+    opacity: 1;
+    visibility: visible;
+}
