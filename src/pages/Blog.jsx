@@ -8,7 +8,7 @@ function Blog() {
 
     const fetchData = async () => {
         try {
-            const api = await fetch('http://localhost:5173/data/blogData.json');
+            const api = await fetch(`${NEXT_PUBLIC_API_URL}/data/blogData.json`);
             const data = await api.json();
             setBlogs(data);
         } catch (error) {

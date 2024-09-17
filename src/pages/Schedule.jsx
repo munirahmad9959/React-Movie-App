@@ -45,7 +45,7 @@ function Schedule() {
 
   const fetchData = async () => {
     try {
-      const api = await fetch('http://localhost:5173/data/movieData.json');
+      const api = await fetch(`${NEXT_PUBLIC_API_URL}/data/movieData.json`);
       const data = await api.json();
       setData(data);
     } catch (error) {
