@@ -45,7 +45,7 @@ function Schedule() {
 
   const fetchData = async () => {
     try {
-      const api = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/data/movieData.json`);
+      const api = await fetch(`${import.meta.env.VITE_API_URL}/data/movieData.json`);
       const data = await api.json();
       setData(data);
     } catch (error) {

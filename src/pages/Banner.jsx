@@ -10,8 +10,9 @@ const Banner = () => {
 
     const fetchData = async () => {
         try {
-            const api = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/data/movieData.json`);
+            const api = await fetch(`${import.meta.env.VITE_API_URL}/data/movieData.json`);
             const data = await api.json();
+            console.log(`Data is: ${data}`);
             setMovies(data);
         } catch (error) {
             console.error(`Error fetching data: ${error.message}`);
