@@ -10,7 +10,7 @@ const Banner = () => {
 
     const fetchData = async () => {
         try {
-            const api = await fetch(`${NEXT_PUBLIC_API_URL}/data/movieData.json`);
+            const api = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/data/movieData.json`);
             const data = await api.json();
             setMovies(data);
         } catch (error) {
