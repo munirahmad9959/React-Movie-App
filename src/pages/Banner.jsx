@@ -9,10 +9,10 @@ const Banner = () => {
     const [movies, setMovies] = useState([]);
 
     const fetchData = async () => {
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://bytebox-byteslasher.vercel.app';
         try {
-            const api = await fetch(`${import.meta.env.VITE_API_URL}/data/movieData.json`);
+            const api = await fetch(`${baseUrl}/data/movieData.json`);
             const data = await api.json();
-            console.log(`Data is: ${data}`);
             setMovies(data);
         } catch (error) {
             console.error(`Error fetching data: ${error.message}`);
@@ -31,7 +31,7 @@ const Banner = () => {
             }
             return movie
         });
-        setMovies(newMovies); 
+        setMovies(newMovies);
     };
 
     return (

@@ -8,7 +8,7 @@ function Model({ movie, toggleModel, status }) {
             <a href="#" className="modelClose" onClick={toggleModel}>
                 <IoClose />
             </a>
-            <iframe width="1280" height="720" src={`${movie.video}?mute=1`} title={`${movie.title} | Official Trailer`} frameborder="0"
+            <iframe width="1280" height="720" src={`${movie.video}?mute=1`} title={`${movie.title} | Official Trailer`} frameBorder="0"
                 allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-show'
                 allowFullScreen
             ></iframe>

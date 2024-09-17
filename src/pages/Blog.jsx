@@ -7,8 +7,9 @@ function Blog() {
     const [blogs, setBlogs] = useState([]);
 
     const fetchData = async () => {
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://bytebox-byteslasher.vercel.app';
         try {
-            const api = await fetch(`${import.meta.env.VITE_API_URL}/data/blogData.json`);
+            const api = await fetch(`${baseUrl}/data/blogData.json`);
             const data = await api.json();
             setBlogs(data);
         } catch (error) {

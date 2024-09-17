@@ -9,8 +9,9 @@ import TrendCard from '../components/TrendCard';
 function Trend() {
     const [slides, setSlides] = useState([]);
     const fetchData = async () => {
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://bytebox-byteslasher.vercel.app';
         try {
-            const api = await fetch(`${import.meta.env.VITE_API_URL}/data/movieData.json`);
+            const api = await fetch(`${baseUrl}/data/movieData.json`);
             const data = await api.json();
             setSlides(data);
         } catch (error) {

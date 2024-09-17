@@ -15,10 +15,10 @@ function BlogCard({ blog }) {
                     </a>
                 </h2>
                 <div className="d-flex align-items-center">
-                    <img src={blog.author.image} alt="" className='img-fluid post-author-img flex-shrink-0' />
+                    <img src={blog.author?.image} alt="" className='img-fluid post-author-img flex-shrink-0' />
                     <div className="post-meta">
                         <p className="post-author-list">
-                            {blog.author.name}
+                            {blog.author?.name}
                         </p>
                         <p className="post-date">
                             <time datetime="2022-01-01">{blog.date}</time>

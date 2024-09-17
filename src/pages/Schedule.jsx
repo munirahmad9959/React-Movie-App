@@ -44,8 +44,9 @@ function Schedule() {
 
 
   const fetchData = async () => {
+    const baseUrl = import.meta.env.VITE_API_URL || 'https://bytebox-byteslasher.vercel.app';
     try {
-      const api = await fetch(`${import.meta.env.VITE_API_URL}/data/movieData.json`);
+      const api = await fetch(`${baseUrl}/data/movieData.json`);
       const data = await api.json();
       setData(data);
     } catch (error) {
